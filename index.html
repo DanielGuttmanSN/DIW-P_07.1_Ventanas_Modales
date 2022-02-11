@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Ejemplo de ventana modal informativa</h1>
+        <input type="button" value="Abrir modal" onclick="mostrar()">
+        <div id="box">
+            <input id="cerrar" type="button" value="X" onclick="cerrar()">  
+            <div id="modal-box">
+                <div id="modal">
+                    <p id="11">Nombre de usuario</p>
+                    <p id="21">Contraseña</p>
+                    <p id="31">Repetir contraseña</p>
+                    <input id="12" type="text" name="usuario">
+                    <input id="22" type="text" name="password">
+                    <input id="32" type="text" name="password2">
+                </div>
+            </div>
+            <input id="enviar" type="button" value="Enviar" onclick="enviar()">
+        </div>
+        <div id="cerrado"></div>
+        <div id="datos"></div>
+        <div id="fondo"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
